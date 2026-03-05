@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Flux Playlista okuplja aktuelne emisije, arhivu prethodnih sezona i Flux diskoteku. Slušajte Bez Pritiska, Yugo Vozi i istražite muzičku biblioteku FLUX radija."
+    />
+    <title>Flux Playlista | Emisije, Arhiva i Flux Diskoteka</title>
+    <link rel="stylesheet" href="playlistStyle.css" />
+    <link rel="stylesheet" href="nav-footer-buttonStyle.css" />
+    <link rel="stylesheet" href="playerStyle.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="Slike//Home/logo.png" alt="Flux Radio Logo" />
+      </a>
+
+      <div class="hamburger" id="hamburger">☰</div>
+      <ul id="nav-menu">
+        <li><a href="index.html" class="menu-home">POČETNA</a></li>
+        <li>
+          <a href="about.html" class="menu-about">O NAMA</a>
+        </li>
+        <li><a href="news.html" class="menu-news">VESTI</a></li>
+        <li>
+          <a href="playlist.html" class="menu-playlist active"
+            >FLUX PLAYLISTA</a
+          >
+        </li>
+        <li><a href="contact.html" class="menu-contact">KONTAKT</a></li>
+      </ul>
+    </nav>
+
+    <!-- This year -->
+    <div class="this-year">
+      <div class="this-year-container">
+        <div class="this-year-heading">
+          <img
+            src="Slike/Playlist/oveGodineNaslov.png"
+            alt="Flux ove godine teaseri... "
+          />
+        </div>
+        <div class="this-year-content">
+          <div class="this-year-item">
+            <div class="ty-item-image">
+              <img src="Slike/Playlist/ty-item1.png" alt="Flux Playlist 1" />
+            </div>
+            <div class="ty-item-text">
+              <h3>
+                BEZ PRITISKA
+                <span class="span-orange">
+                  <span class="thin">Autori i voditelji:</span> ANJA ĐEKIĆ i
+                  VUKAŠIN BURZAN</span
+                >
+              </h3>
+              <p>
+                Anja i Vuksan traže odgovore na goruća pitanja - odnos politike
+                i kulture, ali i druge aktuelne političke teme koje nas sve
+                dotiču. Sa svojim gostima, mladim političkim aktivistima, oni
+                razgovaraju BEZ PRITISKA - on dolazi kasnije!
+              </p>
+              <h4>
+                <span class="span-orange">UTORAK </span> i
+                <span class="span-yellow">ČETVRTAK</span> u 17h
+              </h4>
+              <hr />
+              <p class="ty-text-light">
+                Produkcija: Miona Đenisiljević i Lena Baljak; Režija: Ivona
+                Rambosek Fotografija: Jovan Radenković; Montaža: Minja Luković;
+                Kostim: Vera Davidović Asistent kamere: Todor Miliv
+              </p>
+            </div>
+          </div>
+          <div class="this-year-item">
+            <div class="ty-item-image">
+              <img src="Slike/Playlist/ty-item2.png" alt="Flux Playlist 1" />
+            </div>
+            <div class="ty-item-text">
+              <h3>
+                YUGO VOZI<span class="span-orange">
+                  <span class="thin">Autorke i voditeljke:</span> NIKOLIJA
+                  JOVIČIĆ i KATARINA ZARIĆ</span
+                >
+              </h3>
+              <p>
+                Upadajte u Yuga i provozajte se sa Nikolijom i Zaretom kroz
+                alternativnu muzičku scenu regiona. Odakle smo krenuli, gde smo
+                sada i kuda idemo - saznaćete uz YUGO VOZI!
+              </p>
+              <h4>
+                <span class="span-purple">PONEDELJAK</span>,
+                <span class="span-dark-purple">SREDA</span> i PETAK u 17h
+              </h4>
+              <hr />
+              <p class="ty-text-light">
+                Produkcija: Miona Đenisiljević i Lena Baljak; Režija: Ivona
+                Rambosek Fotografija: Jovan Radenković; Montaža: Minja Luković;
+                Kostim: Vera Davidović Asistent kamere: Todor Milivojević
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="this-year-button">
+          <a href="#" class="button">PRIKAŽI VIŠE!</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flux library-->
+
+    <div class="flux-library">
+      <div class="flux-library-container">
+        <div class="flux-library-heading">
+          <img src="Slike/Home/fluxBiblioteka.png" alt="Flux biblioteka" />
+        </div>
+        <div class="flux-library-content">
+          <div class="flux-library-left">
+            <div class="flux-library-left-top">
+              <div class="flux-library-choices">
+                <div class="flux-library-choice" data-year="2023">
+                  <p>VAŠAR (2023)</p>
+                </div>
+                <div class="flux-library-choice active" data-year="2022">
+                  <p>VAŠAR (2022)</p>
+                </div>
+                <div class="flux-library-choice" data-year="2021">
+                  <p>SUVIŠE FREKVENTNO (2021)</p>
+                </div>
+                <div class="flux-library-choice" data-year="2020">
+                  <p>OSLOBAĐANJE (2020)</p>
+                </div>
+                <div class="flux-library-choice" data-year="2019">
+                  <p>NEMIR (2019)</p>
+                </div>
+                <div class="flux-library-choice" data-year="2018">
+                  <p>FLUKSOVERZ(UM) (2018)</p>
+                </div>
+              </div>
+            </div>
+            <div class="flux-library-left-bottom">
+              <div class="tags">
+                <div class="tag">
+                  <p>#TRANZICIJA<span class="span-yellow-tag">FLUX</span></p>
+                </div>
+                <div class="tag">
+                  <p>#<span class="span-yellow-tag">FLUX</span>2022</p>
+                </div>
+                <div class="tag">
+                  <p>#KIBICPENŽER<span class="span-yellow-tag">FLUX</span></p>
+                </div>
+                <div class="tag">
+                  <p>#VRUĆALINIJA<span class="span-yellow-tag">FLUX</span></p>
+                </div>
+                <div class="tag">
+                  <p>#pov<span class="span-yellow-tag">FLUX</span></p>
+                </div>
+                <div class="tag">
+                  <p>#LEKSIKON<span class="span-yellow-tag">FLUX</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flux-library-right">
+            <div class="flux-biblioteka-content">
+              <div class="flux-biblioteka-button">
+                <a href="#" class="button">FLUX PLAYLIST</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FLUX DISCO-->
+    <div class="flux-disco">
+      <div class="flux-disco-container">
+        <div class="flux-disco-heading">
+          <img src="Slike/Playlist/fluxDiscoHeading.png" alt="Flux diskoteka" />
+        </div>
+        <div class="flux-disco-grid">
+          <div class="flux-disco-item">
+            <div class="flux-disco-item-image">
+              <img src="Slike/Playlist/fluxDisco1.png" alt="Slika 1" />
+            </div>
+            <div class="flux-disco-item-text">
+              <h3>ZHIVOTOLOSH</h3>
+              <p>by Zhivotolosh</p>
+            </div>
+          </div>
+          <div class="flux-disco-item">
+            <div class="flux-disco-item-image">
+              <img src="Slike/Playlist/fluxDisco2.png" alt="Slika 2" />
+            </div>
+            <div class="flux-disco-item-text">
+              <h3>I'VE NEVER SEEN 2 PRETTY BFFS..</h3>
+              <p>by Zoi</p>
+            </div>
+          </div>
+          <div class="flux-disco-item">
+            <div class="flux-disco-item-image">
+              <img src="Slike/Playlist/fluxDisco3.png" alt="Slika 3" />
+            </div>
+            <div class="flux-disco-item-text">
+              <h3>VERY SERIOUS COMPUTER MUSIC</h3>
+              <p>by 711</p>
+            </div>
+          </div>
+          <div class="flux-disco-item">
+            <div class="flux-disco-item-image">
+              <img src="Slike/Playlist/fluxDisco4.png" alt="Slika 4" />
+            </div>
+            <div class="flux-disco-item-text">
+              <h3>SPREAD THE CHOCOLATE</h3>
+              <p>by Marija Karan</p>
+            </div>
+          </div>
+          <div class="flux-disco-item">
+            <div class="flux-disco-item-image">
+              <img src="Slike/Playlist/fluxDisco5.png" alt="Slika 5" />
+            </div>
+            <div class="flux-disco-item-text">
+              <h3>FRENCH KISS ME BRATE</h3>
+              <p>by Bojan Vunturišrević</p>
+            </div>
+          </div>
+          <div class="flux-disco-item">
+            <div class="flux-disco-item-image">
+              <img src="Slike/Playlist/fluxDisco6.png" alt="Slika 6" />
+            </div>
+            <div class="flux-disco-item-text">
+              <h3>THIS MIXTAPE SURVIVED COVID</h3>
+              <p>by Nico</p>
+            </div>
+          </div>
+          <div class="flux-disco-item">
+            <div class="flux-disco-item-image">
+              <img src="Slike/Playlist/fluxDisco7.png" alt="Slika 7" />
+            </div>
+            <div class="flux-disco-item-text">
+              <h3>THATS'HOT</h3>
+              <p>by Sara Jo</p>
+            </div>
+          </div>
+          <div class="flux-disco-item">
+            <div class="flux-disco-item-image">
+              <img src="Slike/Playlist/fluxDisco8.png" alt="Slika 8" />
+            </div>
+            <div class="flux-disco-item-text">
+              <h3>TASTY TREATS FOR KIDS VOL 2.0</h3>
+              <p>by Nikola Damjanović</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>PRONAĐI NAS NA</h3>
+          <p>fdu.fluxradio@gmail.com</p>
+          <p><span class="span-purple">Buleva umetnosti 20, Beograd</span></p>
+          <div class="footer-icons">
+            <a href="https://www.facebook.com/fluxradiofdu/" target="_blank"
+              ><img src="Slike/Home/facebook.png" alt="Facebook Icon"
+            /></a>
+            <a href="https://www.instagram.com/flux_radio/" target="_blank"
+              ><img src="Slike/Home/instagram.png" alt="Instagram Icon"
+            /></a>
+            <a href="https://www.mixcloud.com/fluxradio/" target="_blank"
+              ><img src="Slike/Home/soundcloud.png" alt="MixCloud Icon"
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UCs7Fu4a5iENg__ql-TK5PHg"
+              target="_blank"
+              ><img src="Slike/Home/youtube.png" alt="YouTube Icon"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-center">
+          <a href="index.html"
+            ><img src="Slike/Home/logo.png" alt="Flux Radio Logo"
+          /></a>
+          <p><span class="span-purple">DESIGNED BY MARINA</span></p>
+        </div>
+        <div class="footer-right">
+          <h3>ZAHVALJUJEMO SE</h3>
+          <p>
+            mentorkama
+            <span class="span-purple">Milici Iličić i Marini Zec</span>
+          </p>
+          <p>
+            profesoru
+            <span class="span-purple">Slobodanu Mihajloviću</span>
+          </p>
+
+          <p>
+            profesoru
+            <span class="span-purple">Zdravku Maljkoviću</span>
+          </p>
+
+          <p>
+            studentima II godine
+            <span class="span-purple">Katedre za snimanje i dizajn zvuka</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Mini Player -->
+    <div class="player-toggle" id="playerToggle">
+      <div class="play-icon" id="playIcon">▶</div>
+    </div>
+    <div class="mini-player" id="miniPlayer">
+      <img src="Slike/Playlist/ty-item1.png" alt="Song Cover" />
+      <div class="player-info">
+        <p class="song-title">TRENUTNO:</p>
+        <p class="song-artist"><span class="span-yellow">Bez pritiska</span></p>
+        <p class="song-title">SLEDI:</p>
+        <p class="song-artist">Do sledećeg poziva (Radio serija)</p>
+      </div>
+      <button id="closePlayer">✖</button>
+    </div>
+    <script src="playlistScript.js"></script>
+    <script src="nav.js" defer></script>
+    <script src="player.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+/* ===== PLAY/STOP BUTTON ===== */
+.player-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to right, rgba(215,169,4,0.8), rgba(108,30,94,0.8));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    z-index: 1000;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.player-toggle:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+.play-icon {
+    font-size: 1.8rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+/* ===== MINI PLAYER ===== */
+.mini-player {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 250px;
+    background: rgba(17,17,17,0.95);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    transform: translateY(200px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.mini-player.active {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.mini-player img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.player-info {
+    flex: 1;
+    color: white;
+    font-family: DisplayFont;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.player-info .song-title {
+    font-weight: bold;
+}
+
+.player-info .song-artist {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.mini-player button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.span-yellow{
+    color: #d7a904;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 20px rgba(108,30,94,0.5); }
+    50% { transform: scale(1.1); box-shadow: 0 0 30px rgba(108,30,94,0.8); }
+    100% { transform: scale(1); box-shadow: 0 0 20px rgba(108,30,94,0.5); }
+}
+
+.player-toggle {
+    animation: pulse 2s infinite ease-in-out;
+}

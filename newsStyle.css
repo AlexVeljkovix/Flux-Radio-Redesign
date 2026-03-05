@@ -1,0 +1,262 @@
+body{
+    background-image: url("Slike/News/newsBackground.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/* ===== FLUX PREPORUCUJE ===== */
+
+.flux-recommends {
+    width: 100%;
+    padding: 6rem 2rem 4rem 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    font-family: Figtree-regular;
+
+}
+.flux-recommends-container {
+    width: 80%;
+   
+}
+
+.flux-recommends h2{
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-family: DisplayFont;
+}
+
+.flux-recommends p{
+    font-size:1.1rem;
+    line-height: 2;
+}
+
+.flux-recommends-heading {
+    display: flex;
+    justify-content: flex-end;
+}
+.flux-recommends-heading img {
+    width: 50%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.flux-recommends-section1 {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.flux-recommends-section1-text {
+    flex: 1;
+    padding: 2rem;
+    width: 100%;
+    background: linear-gradient(#c35922, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flux-recommends-section1-text .button {
+    align-self: center;
+}
+
+.flux-recommends-section2 {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.flux-recommends-section2-text {
+    flex: 1;
+    padding: 2rem;
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #6c1e5e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flux-recommends-section2-text .button {
+    align-self: center;
+}
+
+.flux-recommends-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ===== READ THIS ===== */
+
+.read-this {
+    width: 100%;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+.read-this-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.read-this-heading {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.read-this-heading img {
+    width: 100%;
+    height: auto;
+}
+
+.read-this-grid-wrapper {
+    width: 100%;
+}
+
+.read-this-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.grid-item {
+    background: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    filter: brightness(0.7);
+    transition: filter 0.35s ease;
+}
+.grid-item:hover {
+    filter: brightness(1);
+}
+
+.item-image {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    overflow: hidden;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.item-date p{
+    color: #442a8c;
+    background-color: #ffffff;  
+    text-align: right;
+    padding: 0.5rem;
+    font-family: Figtree-light-italic;
+}
+
+.item-text {
+    margin-bottom: 2rem;
+    padding: 1rem; 
+}
+
+.item-text h3{
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-family: DisplayFont;
+    margin-bottom: 1rem;
+}
+
+.item-text p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: Figtree-light;
+}
+
+.item-button {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+
+
+/* ===== RESPONZIVNOST ===== */
+
+
+
+@media (max-width: 1200px){
+
+    .flux-recommends-section1,
+    .flux-recommends-section2{
+        flex-direction: column;
+        align-items:center;
+
+    }
+
+    .flux-recommends-section1 img,
+    .flux-recommends-section2 img{
+        width:100%;
+        max-width:700px;
+        height:auto;
+    }
+
+    .flux-recommends-section1-text,
+    .flux-recommends-section2-text{
+        width:100%;
+        max-width:700px;
+    }
+
+    .flux-recommends-heading img{
+        width:100%;
+        max-width:600px;
+    }
+
+    .read-this-grid {
+        grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+    .flux-recommends-container {
+        width: 90%;
+    }
+    .flux-recommends-section1,
+    .flux-recommends-section2{
+        flex-direction: column;
+    }
+
+    .flux-recommends-section1 img,
+    .flux-recommends-section2 img{
+        width: 100%;
+    }
+
+    .flux-recommends-section1-text,
+    .flux-recommends-section2-text{
+        width: 100%;
+    }
+    
+    .read-this-heading {
+        width: 80%;
+        justify-self: center;
+    }
+
+    .read-this-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+        filter: brightness(1);
+    }
+}

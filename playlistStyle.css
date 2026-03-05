@@ -1,0 +1,498 @@
+/* ===== THIS YEAR ===== */
+
+.this-year {
+    background-image: url("Slike/Playlist/oveGodinePozadina.png");
+    background-size: 100% 100%;
+    background-position: bottom center;
+    width: 100%;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+}
+
+.this-year-container {
+    width: 80%;
+}
+
+.this-year-heading {
+    display: flex;
+    justify-content: flex-start;
+    margin: 2rem 0;
+}
+
+.this-year-heading img {
+    width: 60%;
+    height: auto;
+}
+
+.this-year-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.this-year-item {
+    padding: 2rem;
+    display: flex;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    gap: 2rem;
+}
+.ty-item-image{
+    display: flex;
+    align-items: center;
+}
+
+.ty-item-image img {
+    width: 320px;
+    height: auto;
+    object-fit: cover;
+}
+
+.ty-item-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Figtree-regular;
+}
+
+.ty-item-text h3 {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+    font-family: DisplayFont;
+}
+
+.ty-item-text h4 {
+    margin-top: 2rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+.ty-item-text p {
+    line-height: 1.5rem;
+    opacity: 0.9;
+}
+
+.ty-text-light {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.ty-item-text hr {
+    border: none;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    margin: 0.5rem ;
+}
+
+.this-year-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.span-yellow {
+    color: #d7a904;
+}
+
+.span-orange {
+    color: #c35922;
+}
+
+
+.span-purple {
+    color: #6c1e5e;
+}
+
+.span-dark-purple {
+    color: #442A8C;
+}
+
+.thin{
+    font-family: Figtree-regular;
+    font-size: 1.5rem;
+}
+
+
+/* ===== FLUX LIBRARY ===== */
+
+.flux-library{
+    background:#000;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.flux-library-content{
+    display:flex;
+    gap:2rem;
+    align-items:flex-start;
+}
+
+.flux-library-left{
+    flex:0 0 30%;   
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    gap: 2rem;
+}
+
+.flux-library-right{
+    flex:1;         
+}
+
+.flux-library-container{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+}
+
+.flux-library-heading{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.flux-biblioteka-heading img{
+    width:60%;
+    height:auto;
+}
+
+.flux-biblioteka-content{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    align-items:center;
+}
+
+.card{
+    display:flex;
+    align-items:stretch;
+    width:100%;
+    min-height:100px; 
+    max-height:none; 
+    overflow:hidden;
+    flex-direction:row;
+
+}
+
+.flux-biblioteka1{
+    background: linear-gradient(90deg,#000000,#6c1e5e);
+}
+
+
+.flux-biblioteka2{
+    background: linear-gradient(90deg,#000000,#442a8c);
+}
+.flux-biblioteka3{
+   
+    background: linear-gradient(90deg,#000000,#c35922);
+}
+
+.card img{
+    height:100%;
+    width:auto;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.flux-biblioteka-card-text{
+    flex:1;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:10px;
+}
+
+
+.biblioteka-card-heading-container {
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;
+}
+
+.biblioteka-card-heading-container img {
+    height: 2rem; 
+    width: auto;
+    object-fit: contain;
+}
+
+.flux-biblioteka-card-text h3{
+    font-family:DisplayFont;
+    font-size:1.8rem;
+    color:white;
+}
+
+.flux-biblioteka-card-text p{
+    font-family:Figtree-light;
+    font-size:1rem;
+    line-height:1.5;
+    color:white;
+}
+
+.flux-biblioteka-button{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.tags{
+    margin-top: 20px;
+    display:flex;
+    justify-content:flex-start;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.tag {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-family: DisplayFont;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+.span-yellow-tag{
+    color:rgba(215, 169, 4, 0.5)
+}
+
+.flux-library-choices{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+.flux-library-choice{
+    padding:1rem 0.5rem;
+    cursor:pointer;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+    transition:all .25s ease;
+    color:rgba(255, 255, 255, 0.8);
+
+}
+
+.flux-library-choice p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family:DisplayFont;
+    letter-spacing:1px;
+}
+
+.flux-library-choice:hover{
+    background:rgba(255,255,255,0.08);
+}
+
+.flux-library-choice.active{
+    background:#6c1e5e;
+    color: white;
+}
+
+.card {
+    animation: fade .35s ease;
+}
+
+@keyframes fade {
+    from { opacity:0; transform:translateY(10px);}
+    to { opacity:1; transform:translateY(0);}
+}
+
+/* ===== FLUX DISCO ===== */
+
+.flux-disco{
+    background-image: url("Slike/Playlist/fluxDiscoBackground.png");
+    background-size: cover;
+    background-position: top;
+    padding:4rem 2rem;
+    display:flex;
+    justify-content:center;
+}
+
+.flux-disco-container{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+}
+
+.flux-disco-heading{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.flux-disco-heading img{
+    width:60%;
+    height:auto;
+}
+
+.flux-disco-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:2rem;
+}
+
+.flux-disco-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.flux-disco-item-image{
+    background-color: #000;
+    padding: 1rem;
+    width:auto;
+    aspect-ratio:1/1;
+    overflow:hidden;
+}
+
+.flux-disco-item-image img{
+    width: 200px;
+    object-fit:cover;
+}
+
+.flux-disco-item-text{
+    margin-top:14px;
+    background:white;
+    width:232px;
+    text-align:center;
+    padding:14px 10px;
+    color:black
+}
+
+.flux-disco-item-text h3{
+    font-family:DisplayFont;
+    font-size:1.1rem;
+    letter-spacing: 1px;
+}
+
+.flux-disco-item-text p{
+    font-family:Figtree-light;
+    font-size:.9rem;
+}
+
+.flux-disco-item img,
+.flux-disco-item-text{
+    transition:all .35s ease;
+}
+
+.flux-disco-item:hover img{
+    border-radius:50%;
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+.flux-disco-item:hover .flux-disco-item-text{
+    background:#6c1e5e; 
+    color:white;
+}
+
+
+/* ===== RESPONZIVNOST ===== */
+
+@media (max-width: 1200px) {
+    .this-year-item {
+        flex-direction: column;
+  }
+  
+    .ty-item-image{
+        display: flex;
+        justify-content: center;
+  }
+
+    .flux-library-heading {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .flux-library-heading img {
+        width: 80%;
+    }
+     .flux-library-content{
+        flex-direction:column;
+    }
+
+    .flux-disco-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+ 
+}
+
+@media (max-width: 768px) {
+
+    .this-year-heading {
+        justify-content: center;
+    }
+    .this-year-heading img {
+        width: 80%;
+    }
+
+    .card{
+        flex-direction:column;
+        margin-bottom: 1rem;
+    }
+
+    .card img{
+        width:100%;
+        height:auto;
+        aspect-ratio: 16/9; 
+        object-fit: contain; 
+    }
+
+    .flux-library-left{
+        margin-bottom: 1rem;
+        flex:1;
+    }
+
+    .flux-biblioteka-card-text{
+        padding:1rem;
+        text-align:center;
+    }
+   
+    .flux-biblioteka-buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .flux-biblioteka-buttons .tag,
+    .flux-biblioteka-buttons .button{
+        text-align:center;
+        width:50%;
+    }
+
+    .biblioteka-card-heading-container {
+        justify-content: center; 
+    }
+
+    .biblioteka-card-heading-container img {
+        height: 2rem; 
+        width: auto;
+        object-fit: contain;
+    }
+
+    .flux-disco-grid{
+        grid-template-columns:1fr;
+    }
+    
+    .flux-disco-heading{
+        padding-top: 4rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .flux-disco-heading img{
+        width: 80%;
+    }
+}

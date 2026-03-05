@@ -1,0 +1,802 @@
+/* ===== HERO ===== */
+
+.hero-background{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+
+.hero{
+    height:100%;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.hero-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero-main{
+    margin:auto 0;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    gap:28px;
+}
+
+.hero-image{
+    margin-top: 5rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero-image img{
+    max-width:100%;
+    height:auto;
+}
+
+.hero-image-date{
+    width: 80%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.hero-image-date img{
+    height:40px;
+    width:auto;
+}
+
+.hero-image-date p{
+    color: white;
+    font-size:3rem;
+    font-family: DisplayFont;
+}
+
+.hero-fdu{
+    margin-top: 3rem;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hero-fdu img{
+    height:5rem;
+}
+
+.tags-container{
+    display:flex;
+    margin:1rem;
+    padding: 0 0.5rem;
+}
+.hero-tags-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.tags{
+    margin-top: 20px;
+    display:flex;
+    justify-content:flex-start;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.tag {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-family: DisplayFont;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+
+/* ===== FLUX INFO ===== */
+.flux-info{
+    background-image: url("Slike/Home/fluxInfoBackground.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-color:rgba(0, 0, 0, 1);
+    padding:4rem 2rem;
+    color:white;
+    display:flex;
+    justify-content:center;
+}
+
+.flux-info-container{
+    width: 80%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2rem;
+}
+
+.flux-info-heading{
+    display:contents; 
+}
+
+.flux-info-heading img{
+    width:100%;
+    height:auto;
+    align-self:center;
+    justify-self: center;
+}
+
+
+.flux-info-content{
+    display:contents;
+    margin-bottom: 0;
+}
+
+.flux-info-content p{
+    font-size:1.1rem;
+    line-height: 2;
+    font-family: Figtree-light;
+}
+
+.flux-info-content-text h2{
+    font-size:2rem;
+    font-family: Figtree-light-italic;
+}
+
+.flux-info-content img{
+    width:100%;
+    align-self: center;
+    height:auto;
+}
+.flux-info-button{
+    margin-top: 0;
+    grid-column:1 / -1;
+    display:flex;
+    justify-content:center;
+}
+
+.span-yellow{
+    color:#d7a904
+}
+
+.span-yellow-tag{
+    color:rgba(215, 169, 4, 0.5)
+}
+
+
+/* ===== FLUX PREPORUCUJE ===== */
+.flux-recommends {
+    padding: 4rem 2rem;
+    background: #000; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    font-family: Figtree-regular;
+}
+.flux-recommends-container {
+    width: 80%;
+}
+
+.flux-recommends h2{
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-family: DisplayFont;
+}
+
+.flux-recommends p{
+    font-size:1.1rem;
+    line-height: 2;
+}
+
+.flux-recommends-heading {
+    display: flex;
+    justify-content: flex-end;
+}
+.flux-recommends-heading img {
+    width: 50%;
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.flux-recommends-section1 {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.flux-recommends-section1-text {
+    flex: 1;
+    padding: 2rem;
+    width: 100%;
+    background: linear-gradient(#c35922, #000000);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flux-recommends-section1-text .button {
+    align-self: center;
+}
+
+
+.flux-recommends-section2 {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.flux-recommends-section2-text {
+    flex: 1;
+    padding: 2rem;
+    width: 100%;
+    background: linear-gradient(135deg, #000000, #6c1e5e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flux-recommends-section2-text .button {
+    align-self: center;
+}
+
+.flux-recommends-button {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* ===== PROGRAMSKA SEMA ===== */
+.programska-shema{
+    min-height: 100vh;
+    background-image: url("Slike/Home/programskaShemaBackground.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-color: #000;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    color: white;
+}
+
+.programska-shema-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.programska-shema-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.programska-shema-heading img {
+    max-width: 80%;
+    height: auto;
+}
+
+.programska-shema-content {
+    width:100%;
+    display:flex;
+    gap:2rem;
+    align-items:center;
+    
+}
+
+.programska-shema-carousel{
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    max-height: 70vh;
+}
+
+.programska-shema-list{
+    width: 40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 70%;
+    margin: 0 10px;
+    transition: transform 0.4s, opacity 0.4s;
+    opacity: 0.5;
+    transform: scale(0.85);
+}
+.carousel-slide.active{
+    opacity:1;
+    transform:scale(1);
+}
+
+.carousel-slide:not(.active){
+    filter:blur(2px);
+}
+
+.carousel-slide img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #6c1e5e;
+    font-size: 4rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
+}
+
+.carousel-btn:hover{
+    color:#fff;
+    transform: translateY(-50%) scale(1.15);
+}
+
+.programska-shema-list{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:1.5rem;
+}
+
+
+#schedule{
+    width:100%;
+    padding:25px 30px;
+    transition: opacity .3s ease;
+}
+
+#schedule ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+
+}
+
+#schedule li{
+    color:white;
+    padding:10px 15px;
+    transition: transform .2s, background .2s;
+}
+
+#schedule li h3{
+    font-size:1.8rem;
+    font-family: DisplayFont;
+}
+
+#schedule li p{
+    font-size:1rem;
+    font-family: Figtree-light;
+    line-height: 1.5;
+}
+
+
+
+/* ===== FLUX BIBLIOTEKA ===== */
+.flux-biblioteka{
+    background:#000;
+    padding:4rem 2rem;
+    display:flex;
+    justify-content:center;
+}
+
+.flux-biblioteka-container{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    gap:3rem;
+}
+
+
+.flux-biblioteka-heading{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.flux-biblioteka-heading img{
+    max-width:60%;
+    height:auto;
+}
+
+
+.flux-biblioteka-content{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+    align-items:center;
+}
+
+.card{
+    display:flex;
+    align-items:stretch;
+    width:100%;
+    min-height:100px; 
+    max-height:none; 
+    overflow:hidden;
+    flex-direction:row;
+
+}
+
+.flux-biblioteka1{
+    background: linear-gradient(90deg,#000000,#6c1e5e);
+}
+
+.flux-biblioteka2{
+    background: linear-gradient(90deg,#000000,#442a8c);
+}
+.flux-biblioteka3{
+   
+    background: linear-gradient(90deg,#000000,#c35922);
+}
+
+.card img{
+    height:100%;
+    width:auto;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.flux-biblioteka-card-text{
+    flex:1;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:10px;
+}
+
+.biblioteka-card-heading-container {
+    display: flex;
+    align-items: center; 
+    gap: 0.5rem;
+}
+
+.biblioteka-card-heading-container img {
+    height: 2rem; 
+    width: auto;
+    object-fit: contain;
+}
+
+.flux-biblioteka-card-text h3{
+    font-family:DisplayFont;
+    font-size:1.8rem;
+    color:white;
+}
+
+.flux-biblioteka-card-text p{
+    font-family:Figtree-light;
+    font-size:1rem;
+    line-height:1.5;
+    color:white;
+}
+
+.flux-biblioteka-buttons{
+   width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.flux-biblioteka-buttons .tag:first-child{
+    justify-self:start;
+}
+
+.flux-biblioteka-buttons .tag:last-child{
+    justify-self:end;
+}
+
+.flux-biblioteka-buttons .button{
+    justify-self:center;
+}
+
+/* ===== FLUX TEASER ===== */
+.flux-teaser {
+    background-image: url("Slike/Home/fluxTeaserBackground.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.flux-teaser-container {
+    display: flex;
+    width: 80%;
+    flex-wrap: nowrap;
+}
+
+.flux-teaser-left {
+    flex: 1 1 30%; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flux-teaser-heading img {
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+.flux-teaser-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.flux-teaser-buttons .button {
+    text-align: center;
+    width: fit-content;
+}
+
+
+
+.teaser-right {
+    flex: 2 1 65%;
+}
+
+.teaser-right iframe{
+    width:100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    border:0;
+
+}
+
+
+/* ===== TABLET/LAPTOP ===== */
+@media (max-width: 1200px){
+
+    .flux-recommends-section1,
+    .flux-recommends-section2{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .flux-recommends-section1 img,
+    .flux-recommends-section2 img{
+        width:100%;
+        max-width:700px;
+        height:auto;
+    }
+
+    .flux-recommends-section1-text,
+    .flux-recommends-section2-text{
+        width:100%;
+        max-width:700px;
+    }
+
+    .flux-recommends-heading img{
+        width:100%;
+        max-width:600px;
+    }
+
+    .programska-shema-content{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .programska-shema-carousel{
+        width:100%;
+        max-height:none;
+    }
+
+    .programska-shema-list{
+        width:100%;
+    }
+
+    .carousel-slide{
+        flex:0 0 90%;
+    }
+    
+}
+
+/* ===== RESPONZIVNOST ===== */
+
+
+/* ===== TELEFON ===== */
+@media (max-width: 768px) {
+    
+    .hero-container,
+    .flux-info-container,
+    .flux-recommends-container{
+        width:90%;
+    }
+    .hero-image-date{
+        flex-direction: column;
+        gap:10px;
+        width:100%;
+        text-align:center;
+    }
+    .hero-image{
+        margin-top:3rem;
+    }
+    .hero-image-date p{
+        font-size:2.5rem;
+    }
+
+    .hero-image-date img{
+        height:35px;
+    }
+   
+    .hero-fdu{
+        flex-direction:column;
+        gap:2rem;
+    }
+
+    .hero-fdu img{
+        height:4rem;
+    }
+
+    .flux-info-container{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        gap:2rem;
+    }
+
+    .flux-info-heading,
+    .flux-info-content{
+        display:block;
+    }
+
+    .flux-info-content-text{
+        width:100%;
+    }
+
+    .flux-info-content img{
+        width:100%;
+        margin-top:1.5rem;
+    }
+    
+    .flux-recommends-section1,
+    .flux-recommends-section2{
+        flex-direction: column;
+    }
+
+    .flux-recommends-section1 img,
+    .flux-recommends-section2 img{
+        width: 100%;
+    }
+
+    .flux-recommends-section1-text,
+    .flux-recommends-section2-text{
+        width: 100%;
+    }
+
+    .programska-shema-content{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .programska-shema-carousel{
+        width:100%;
+        max-height:none;
+    }
+
+    .programska-shema-list{
+        width:100%;
+    }
+
+    .carousel-slide{
+        flex:0 0 90%;
+    }
+
+    .card{
+        flex-direction:column;
+    }
+
+    .card img{
+        width:100%;
+        height:auto;
+        aspect-ratio: 16/9; 
+        object-fit: contain; 
+    }
+
+    .flux-biblioteka-card-text{
+        padding:15px;
+        text-align:center;
+    }
+
+    .flux-biblioteka-buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .flux-biblioteka-buttons .tag,
+    .flux-biblioteka-buttons .button{
+        text-align:center;
+        width:50%;
+    }
+
+    .biblioteka-card-heading-container {
+        justify-content: center; 
+    }
+
+    .biblioteka-card-heading-container img {
+        height: 2rem; 
+        width: auto;
+        object-fit: contain;
+    }
+
+    .flux-teaser-container {
+        display: flex;
+        width: 80%;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .flux-teaser-left,
+    .flux-teaser-right {
+        flex: unset;      
+        width: 100%;      
+    }
+
+    .flux-teaser-right{
+        justify-content: center;
+    }
+   .flux-teaser-right img {
+        width: 100%;   
+        height: auto;  
+        display: block;
+    }
+
+}

@@ -1,0 +1,468 @@
+/* ===== HERO ===== */
+
+.hero{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#heroPozadina{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-container{
+    position: absolute;
+    inset: 0;
+    display:flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container-content{
+    width: 50%; 
+}
+
+.hero-container-content-heading{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container-content-heading img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-container-content-logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-container-content-logo img{
+    height: 10rem;
+    width: auto;
+}
+
+/* ===== O RADIJU ===== */
+
+.about{
+    width: 100%;
+    background-image: url("Slike/About/oRadijuBackground.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+    justify-content: flex-start; 
+    
+}
+
+.about-container{
+    margin-top: 2rem;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.about-heading img{
+    
+    width: 35%;
+    margin-bottom: 1rem;
+}
+
+.about-content p{
+    font-size: 1.2rem;
+    font-family: Figtree-light;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.span-orange{
+    color: #c35922;
+    font-family: Figtree-light-italic;
+}
+
+.tags{
+    margin: 20px;
+    display:flex;
+    justify-content:flex-start;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content: end;
+
+}
+
+.tag {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 25px;
+    display:flex;
+    align-items:center;
+    font-family: DisplayFont;
+}
+
+.span-yellow{
+    color:#d7a904
+}
+
+.span-yellow-tag{
+    color:rgba(215, 169, 4, 0.5)
+}
+
+.retrofuturizam-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    color: white;
+    font-family: Figtree-light;
+    position: relative;
+    margin-top: 4rem ;
+}
+
+.retrofuturizam-heading img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.retrofuturizam-grid-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    margin: 4rem 0;
+}
+
+.retrofuturizam-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 100%;
+    justify-items: center; 
+    align-items: start; 
+}
+
+.retrofuturizam-container p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.retrofuturizam-grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.retrofuturizam-grid-item img {
+    max-height: 200px;
+    margin-bottom: 1rem;
+}
+
+.retrofuturizam-grid-item p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+#samoOdNasZavisi{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+#pozadinaSekcije {
+    width: 100%;         
+    height: auto;        
+    display: block;      
+    object-fit: cover;   
+}
+
+/* ===== FLUX TIM ===== */
+
+.tim-galerija{
+    width: 100%;
+    background-image: url("Slike/About/tim-galerijaBackground.png");
+}
+
+.flux-tim{
+
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 4rem;
+}
+
+.flux-tim-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 4rem ;
+}
+
+.flux-tim-heading {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    
+}
+.flux-tim-heading img {
+    max-width: 80%;
+    height: auto;
+}
+
+.flux-tim-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.flux-tim-grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#flux-tim-button{
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== GLERIJA ===== */
+
+.galerija {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.galerija-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.galerija-heading {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.galerija-heading img {
+    width: 35%;
+    height: auto;
+    display: block;
+}
+
+.galerija-grid-wrapper {
+    width: 100%;
+}
+
+.galerija-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 120px);
+    gap: 1rem;
+}
+
+.galerija-grid-item {
+    position: relative;
+}
+
+.galerija-grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    aspect-ratio: 4/3;
+    filter: brightness(0.6);
+    transition: transform .45s ease, box-shadow .45s ease, filter .45s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2); 
+    position: relative;
+    z-index: 1;
+}
+
+.galerija-grid-item:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+  filter: brightness(1);
+  z-index: 2; 
+}
+
+.s1 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.s2 {
+  grid-column: 1 / 3;
+  grid-row: 4 / 7;
+}
+
+.s3 {
+  grid-column: 3 / 6;
+  grid-row: 1 / 5;
+}
+
+.s4 {
+  grid-column: 3 / 6;
+  grid-row: 5 / 7;
+}
+
+.s5 {
+  grid-column: 6 / 7;
+  grid-row: 1 / 3;
+}
+
+.s6 {
+  grid-column: 6 / 7;
+  grid-row: 3 / 5;
+}
+
+.s7 {
+  grid-column: 6 / 7;
+  grid-row: 5 / 7;
+}
+
+.galerija-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== RESPONZIVNOST ===== */
+
+@media (max-width: 1200px) {
+    .about-heading img{
+        width: 70%;
+    
+    }
+   .retrofuturizam-grid-wrapper {
+        padding: 2rem 1rem;
+        width: 100%;
+        overflow-x: hidden; 
+        box-sizing: border-box;
+    }
+
+    .retrofuturizam-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .retrofuturizam-grid-item img {
+        max-width: 100%; 
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container{
+        padding: 0 1rem;
+    }
+
+    .hero-container-content{
+        margin: 5rem 0 2rem 0;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-container-content-heading img{
+        max-width: 70%;
+        height: auto;
+    }
+    
+    .hero-container-content-logo{
+        justify-content: center;
+    }
+
+    .hero-container-content-logo img{
+        max-width: 10rem;
+        height: auto;
+    }
+    
+    .tags{
+        justify-content: center;
+    }
+
+    .retrofuturizam-grid-wrapper {
+        padding: 2rem 1rem;
+        width: 100%;
+        overflow-x: hidden; 
+        box-sizing: border-box;
+    }
+
+    .retrofuturizam-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .retrofuturizam-grid-item img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+
+    .flux-tim-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .flux-tim-heading {
+        justify-content: center; 
+    }
+
+    .flux-tim-heading img {
+        max-width: 80%;
+    }
+    
+
+    .galerija-heading img {
+        width: 60%;
+    }
+
+    .galerija-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .galerija-grid-item {
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .galerija-grid-item img {
+    filter: brightness(1);
+    }
+
+    .s3 {
+        grid-column: 1 / -1 !important;
+    }
+}
+
+
+
+
+
+
